@@ -2,9 +2,11 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <title>Cromen × KDDI</title>
 
     <link rel="stylesheet/less" type="text/css" href="./less/index.less">
+    <link rel="stylesheet/less" type="text/css" href="./css/high.css">
 
     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jade/1.11.0/jade.js'></script>
     <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js'></script>
@@ -18,11 +20,23 @@
 
 <script type="riot/tag" template='jade'>
 app
+  header.f.flex-between
+    span.title.px14 
+      | CrossMentorship
+      span.x ×
+      |KDDI Mugen Lab
+    span.entry.px20 ENTRY
   div.hero
-    img(src='./img/hero.jpg')
-    div.hero-content
-      span CrossMentorship × KDDI Mugen Lab
-      span ENTRY 
+    div.bg
+      img(src='./img/hero.jpg')
+    div.hero-content-wrapper
+      div.hero-content
+        span CrossMentorship × KDDI Mugen Lab
+        br
+        span ENTRY
+  div.about-holder
+    h2 about
+    p 若者とベンチャー企業の化学反応を起こすワークショップ！注目ベンチャー企業ごとの課題を起業家と若者が共に考え、意見交換をしながら、解決を図ります。参加者は希望のベンチャーに参加オファーをすることができます。
 
 </script>
 
